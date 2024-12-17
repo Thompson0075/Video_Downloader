@@ -13,23 +13,16 @@ def log_error(e):
 
 # Flask app setup
 app = Flask(__name__)
-DOWNLOAD_FOLDER = "downloads"  # 默认下载文件夹
+DOWNLOAD_FOLDER = "downloads"
 
-# 确保下载文件夹存在
 if not os.path.exists(DOWNLOAD_FOLDER):
     os.makedirs(DOWNLOAD_FOLDER)
 
 def download_video(url, output_folder):
-    """
-    使用 yt-dlp 下载视频
-    :param url: 视频网址
-    :param output_folder: 保存视频的文件夹
-    :return: 下载结果消息
-    """
     ydl_opts = {
-        'outtmpl': os.path.join(output_folder, '%(title)s.%(ext)s'),  # 保存路径和文件名模板
-        'format': 'bestvideo+bestaudio/best',  # 下载最佳视频和音频
-        'merge_output_format': 'mp4',  # 合并输出为 mp4 格式
+        'outtmpl': os.path.join(output_folder, '%(title)s.%(ext)s'),
+        'format': 'bestvideo+bestaudio/best',
+        'merge_output_format': 'mp4',
     }
 
     try:
@@ -54,27 +47,20 @@ def download():
     return jsonify({'status': 'success', 'message': message})
 
 def run_flask_app():
-    """
-    运行 Flask 应用程序
-    """
+
     app.run(debug=True, use_reloader=False)
 
 def create_gui():
-    """
-    创建 Tkinter GUI，用于显示运行状态并控制应用退出
-    """
     root = tk.Tk()
     root.title("App Monitor")
     root.geometry("500x400")
 
-    # 显示状态的文本框
     text_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, width=60, height=20)
     text_area.pack(pady=10)
 
-    # 退出按钮
     def quit_app():
         root.destroy()
-        os._exit(0)  # 强制退出所有线程
+        os._exit(0)
 
     quit_button = tk.Button(root, text="退出应用", command=quit_app, bg="red", fg="white")
     quit_button.pack(pady=10)
@@ -82,22 +68,17 @@ def create_gui():
     return root, text_area
 
 def update_gui(text_area, message):
-    """
-    更新 GUI 文本框中的内容
-    """
+
     text_area.insert(tk.END, message + "\n")
     text_area.see(tk.END)
 
 if __name__ == '__main__':
-    # 创建 GUI
     gui, text_area = create_gui()
 
-    # 在另一个线程中运行 Flask
     flask_thread = threading.Thread(target=run_flask_app, daemon=True)
     flask_thread.start()
-    # 更新 GUI 状态
+
     update_gui(text_area, "Flask 应用程序已启动！")
     update_gui(text_area, "访问 http://127.0.0.1:5000 查看 Web 界面。")
 
-    # 启动 Tkinter 主循环
     gui.mainloop()
