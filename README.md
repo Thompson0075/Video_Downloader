@@ -1,7 +1,7 @@
 ##本软件仅供学习使用，请严格遵守平台法律和保护创作者的利益，禁止一切商业行为！##
 
 Basic默认你已经拥有python环境，并且提前安装了必要模块和配置好了ffmpeg环境。
-
+必要模块：requests、yt-dlp、flask
 
 直接打开“installer.bat”，等待安装。
 等待下载好后，双击”启动器.exe“（或者双击“start.bat”、cmd运行python start.py）即可。
