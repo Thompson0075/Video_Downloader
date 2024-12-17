@@ -12,7 +12,7 @@ Basic默认你已经拥有python环境，并且提前安装了必要模块和配
 
 ![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212443377.png)
 
-![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212549999.png)
+![image](http://tool.yiranalso.site/tool/video_downloader/pictures/image-20241217212549999.png)
 
 
 
