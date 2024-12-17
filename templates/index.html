@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频下载器</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        button:active {
+            background-color: #388e3c;
+        }
+
+        .message {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* 加载动画 */
+        .loading {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border: 4px solid transparent;
+            border-top: 4px solid #4CAF50;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>视频下载器</h1>
+        <form id="downloadForm">
+            <input type="text" id="url" placeholder="请输入视频网址" required>
+            <button type="submit">下载</button>
+        </form>
+        <button id="updateButton" style="margin-top: 20px;">检查更新</button>
+        <div class="message" id="message"></div>
+    </div>
+
+    <script>
+        document.getElementById('downloadForm').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const url = document.getElementById('url').value;
+            const messageEl = document.getElementById('message');
+            messageEl.textContent = '正在下载，请稍候...';
+            messageEl.appendChild(createLoadingSpinner());
+
+            try {
+                const response = await fetch('/download', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url })
+                });
+
+                const result = await response.json();
+                messageEl.textContent = result.message;
+            } catch (error) {
+                messageEl.textContent = '下载失败: 网络错误';
+            }
+        });
+
+        document.getElementById('updateButton').addEventListener('click', async () => {
+            const messageEl = document.getElementById('message');
+            messageEl.textContent = '正在检查更新，请稍候...';
+            messageEl.appendChild(createLoadingSpinner());
+
+            try {
+                const response = await fetch('/update', { method: 'POST' });
+                const result = await response.json();
+                messageEl.textContent = result.message;
+            } catch (error) {
+                messageEl.textContent = '更新失败: 网络错误';
+            }
+        });
+
+        function createLoadingSpinner() {
+            const spinner = document.createElement('div');
+            spinner.className = 'loading';
+            return spinner;
+        }
+    </script>
+</body>
+
+</html>
