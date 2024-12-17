@@ -27,6 +27,6 @@ Basic默认你已经拥有python环境，并且提前安装了必要模块和配
 **其他事项：**
 
 本软件使用的是WebUI，请保证http://127.0.0.1:5000/的端口畅通无阻。
-如果在使用中有问题，请将error_log.txt到官网上反应或是发送至[邮箱](mailto:huyiran0075@gmail.com)。
+如果在使用中有问题，请将error_log.txt到[官网](https://www.yiranalso.site/)上反应或是发送至[邮箱](mailto:huyiran0075@gmail.com)。
 
 **##再次重申：本软件仅供学习使用，请严格遵守平台法律和保护创作者的利益，禁止一切商业行为！##**
