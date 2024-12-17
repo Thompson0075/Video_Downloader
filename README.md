@@ -19,6 +19,7 @@ Basic默认你已经拥有python环境，并且提前安装了必要模块和配
 
 
 *注意：本软件使用的是yt-dlp下载视频，支持[网站的列表](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)。*
+
 **已知问题：**
 
 如果下载阿B的视频无法播放，那是因为它是使用AV1方式解码，请自行查询自己的硬件是否支持AV1解码，然后去微软官方下载[Av1 Video Extension](https://apps.microsoft.com/detail/9mvzqvxjbq9v?hl=zh-cn&gl=US)或者其他的解码软件
