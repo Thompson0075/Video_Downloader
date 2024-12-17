@@ -1,4 +1,9 @@
 ##本软件仅供学习使用，请严格遵守平台法律和保护创作者的利益，禁止一切商业行为！##
+
+
+
+
+安装流程：
 本软件需要安装在python下运行，请提前安装好python环境。
 
 ![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217014319633.png)
