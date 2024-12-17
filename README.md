@@ -8,9 +8,9 @@ Basic默认你已经拥有python环境，并且提前安装了必要模块和配
 直接打开“installer.bat”，等待安装。
 等待下载好后，双击”启动器.exe“（或者双击“start.bat”、cmd运行python start.py）即可。
 
-![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212521340.png)
+![image](http://tool.yiranalso.site/tool/video_downloader/pictures/image-20241217212521340.png)
 
-![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212443377.png)
+![image](http://tool.yiranalso.site/tool/video_downloader/pictures/image-20241217212443377.png)
 
 ![image](http://tool.yiranalso.site/tool/video_downloader/pictures/image-20241217212549999.png)
 
