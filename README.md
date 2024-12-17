@@ -6,6 +6,12 @@ Basic默认你已经拥有python环境，并且提前安装了必要模块和配
 直接打开“installer.bat”，等待安装。
 等待下载好后，双击”启动器.exe“（或者双击“start.bat”、cmd运行python start.py）即可。
 
+![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212521340.png)
+
+![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212443377.png)
+
+![image](https://github.com/Thompson0075/Video_Downloader/blob/picture/image-20241217212549999.png)
+
 本软件使用的是yt-dlp下载视频，支持[网站的列表](https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md)。
 注意：如果下载阿B的视频无法播放，那是因为它是使用AV1方式解码，请自行查询自己的硬件是否支持AV1解码，然后去微软官方下载[Av1 Video Extension](https://apps.microsoft.com/detail/9mvzqvxjbq9v?hl=zh-cn&gl=US)或者其他的解码软件
 
