@@ -1,4 +1,3 @@
-"""Video Downloader — modern desktop entry (PySide6 + QML)."""
 from __future__ import annotations
 
 import sys
@@ -48,7 +47,7 @@ def main() -> int:
     app = QGuiApplication(sys.argv)
     app.setApplicationName("Video Downloader")
     app.setOrganizationName("VideoDownloader")
-    app.setApplicationVersion("2.0.2")
+    app.setApplicationVersion("2.0.5")
     # Help Windows group taskbar / notifications correctly
     try:
         if sys.platform == "win32":
