@@ -1,0 +1,6 @@
+{
+  "version": "2.1.1",
+  "notes": "优化背景烟雾动画：连续漂移不闪现、更流畅省资源；光斑更亮更快；预览卡按钮横排不溢出；自定义细滚动条",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.1.1/VideoDownloader-win64-2.1.1.zip",
+  "sha256": "0633e99920191ac4ce4cc99b928ec44342b71ff89e529bf3a0e38b45bd99a013"
+}

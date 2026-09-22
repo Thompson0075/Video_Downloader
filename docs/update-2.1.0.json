@@ -1,0 +1,6 @@
+{
+  "version": "2.1.0",
+  "notes": "优化背景烟雾动画：连续漂移不闪现、更流畅省资源",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.1.0/VideoDownloader-win64-2.1.0.zip",
+  "sha256": "dfff4870ee5ea44756b3bfda76116e0dab3fa156b33c0da4959e571693327029"
+}
