@@ -1,6 +1,6 @@
 {
   "version": "2.0.6",
   "notes": "修复无边框窗口拖动（不再跳到左上角）；整窗可拖、拖入链接解析；记住窗口位置。",
-  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.0.6/VideoDownloader-win64-2.0.6.zip",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.0.6/VideoDownloader.zip",
   "sha256": "b3680f1be555ba6c9ed6959ff331e0474300d4ac581fca6c08372773d7c80a81"
 }
