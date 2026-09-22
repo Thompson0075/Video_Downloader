@@ -1,6 +1,0 @@
-{
-  "version": "2.0.5",
-  "notes": "新增下载视频封面（可单独下载封面，下载视频时可同时保存封面）；含 2.0.4 全部改进。",
-  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.0.5/VideoDownloader-win64-2.0.5.zip",
-  "sha256": "2a2d9f3ecd79df28760741ac8703152c173d0d28de3812e7a4400761d92f9de2"
-}
