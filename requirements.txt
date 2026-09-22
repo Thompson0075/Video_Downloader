@@ -1,3 +1,4 @@
-requests
-yt-dlp
-flask
+yt-dlp>=2026.8.19
+PySide6-Essentials>=6.11.2
+requests>=2.32.0
+pyinstaller>=6.22.0
