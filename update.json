@@ -1,6 +1,6 @@
 {
   "version": "2.2.2",
   "notes": "内置 QuickJS 解决 YouTube 签名/n-challenge（修复 Requested format is not available）；格式自动回退；多客户端合并清晰度",
-  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.2.2/VideoDownloader-win64-2.2.2.zip",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.2.2/VideoDownloader.zip",
   "sha256": "76c77712b813096bd6d29a538b908d7dc5ec5c582fba3df9f8d81aecc797fcef"
 }
