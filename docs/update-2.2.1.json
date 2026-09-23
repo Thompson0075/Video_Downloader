@@ -1,0 +1,6 @@
+{
+  "version": "2.2.1",
+  "notes": "登录窗口获取 Cookie（Chrome/Edge 运行中可用）；Cookie 设置 UI 加固；禁止子进程弹出终端",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.2.1/VideoDownloader-win64-2.2.1.zip",
+  "sha256": "638e57c56790734fe4b6b08c4f0bda91ea59af727806f05d4d4d5b940ebc954c"
+}
