@@ -1,0 +1,6 @@
+{
+  "version": "2.3.2",
+  "notes": "修复合集列表标题显示为「视频+视频号」：解析后自动补全 B 站/YouTube 真实视频标题",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.3.2/VideoDownloader-win64-2.3.2.zip",
+  "sha256": "1d2bf81469f9359df571dcfa2c46bad394d814a7b9f75c4b80d30f938f77b779"
+}

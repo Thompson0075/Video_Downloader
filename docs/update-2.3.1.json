@@ -1,0 +1,6 @@
+{
+  "version": "2.3.1",
+  "notes": "修复合集列表标题显示为无标题；修复全选/清空选择与下载选中按钮重叠；修复博主主页/频道无法解析全部视频（自动跳转 /videos 列表）",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.3.1/VideoDownloader-win64-2.3.1.zip",
+  "sha256": "55c325d90a6c44fd46ec8205ef823f6532d460a9fa78fc855215fbfacfa7a69e"
+}

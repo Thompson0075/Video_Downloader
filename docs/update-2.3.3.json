@@ -1,0 +1,6 @@
+{
+  "version": "2.3.3",
+  "notes": "修复合集解析后误显示已勾选；B 站主页/标题接口限流（412/503）自动降速重试，错误提示更明确",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.3.3/VideoDownloader-win64-2.3.3.zip",
+  "sha256": "2543269586775e9489fe1e2e70628734ba8dbffaff97f63b4d24a4ddbd5a3b2c"
+}

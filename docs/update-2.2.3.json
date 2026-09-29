@@ -1,0 +1,6 @@
+{
+  "version": "2.2.3",
+  "notes": "修复字幕下载：扩展中文/英文语言码匹配（zh-Hans/zh-CN/zh-Hant/en-US/en-orig 等，含自动翻译）；字幕失败不再中断视频下载；补充 curl_cffi 浏览器指纹；下载完成后提示字幕结果",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.2.3/VideoDownloader-win64-2.2.3.zip",
+  "sha256": "b74df0693cc5826194693538643b8eb2a10c273c8cdb8407a158f955005d7308"
+}

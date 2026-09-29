@@ -1,0 +1,6 @@
+{
+  "version": "2.3.0",
+  "notes": "新增视频合集下载与「此人全部视频」下载：自动识别 YouTube 播放列表/频道、B 站合集/UP 主空间；可限量（全部/最新 10/20/50/100）；按合集子目录+序号保存",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.3.0/VideoDownloader-win64-2.3.0.zip",
+  "sha256": "4f9b3d0abf680d75d241d7d99e9dfdb067cbf48f784ba47beaa85e59d625aa91"
+}
