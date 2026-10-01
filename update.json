@@ -1,6 +1,8 @@
 {
-  "version": "2.3.3",
-  "notes": "修复合集解析后误显示已勾选；B 站主页/标题接口限流（412/503）自动降速重试，错误提示更明确",
-  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v2.3.3/VideoDownloader-win64-2.3.3.zip",
-  "sha256": "2543269586775e9489fe1e2e70628734ba8dbffaff97f63b4d24a4ddbd5a3b2c"
+  "version": "26.10.1",
+  "notes": "桌面端多平台 Cookie；exe 图标与安卓一致；README 补充插画与许可；安卓设置新增项目仓库入口",
+  "package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v26.10.1/EveGrabber-win64-26.10.1.zip",
+  "sha256": "529284fe0ba44fe3c7fe0c1eb4e1daa80dcd980300028ab897877b52ccefaa64",
+  "android_package_url": "https://github.com/Thompson0075/Video_Downloader/releases/download/v26.10.1/EveGrabber-26.10.1.apk",
+  "android_sha256": "ba9ee3040aa5eb456b0cc2ad1751b702970c056d8d0428bab0f931aa38a230e9"
 }
